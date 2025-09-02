@@ -342,4 +342,5 @@ ASALocalRun/
 venv
 .env".env" 
 ".env" 
-"chroma_db/" 
+"chroma_db/"
+.env
