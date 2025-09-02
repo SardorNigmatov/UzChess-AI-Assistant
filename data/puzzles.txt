@@ -1,0 +1,22 @@
+UzChess boshqotirmalari 4 xil turga bo'linadi:
+
+1) Oson boshqotirmalar:
+- Juda oddiy tipdagi boshqotirmalar.
+- Har kuni 5 ta boshqotirma bepul.
+- Ko'proq ishlash uchun premium ta’rif kerak.
+
+2) O'rtacha boshqotirmalar:
+- O'rtacha qiyinchilik darajasi.
+- Har kuni 5 ta boshqotirma bepul.
+- Ko'proq ishlash uchun premium ta’rif kerak.
+
+3) Qiyin boshqotirmalar:
+- Murakkab tipdagi boshqotirmalar.
+- Har kuni 5 ta boshqotirma bepul.
+- Ko'proq ishlash uchun premium ta’rif kerak.
+
+4) Tezkor boshqotirmalar:
+- 3 xil daraja: oson, o'rtacha, qiyin.
+- 2 xil vaqt: 3 daqiqa, 5 daqiqa.
+- Har kuni 1 marta bepul.
+- Ko'proq ishlash uchun premium ta’rif kerak.

@@ -1,0 +1,13 @@
+UzChess ilovasidagi kitoblar ro'yxati:
+1. Taktik xatolar: haxmatdagi taktika xatolari va ularni aniqlash, tahlil qilish bo'yicha qo'llanma. Shaxmatchilar o'z xatolarini ko'rib chiqib, o'yinini yaxshilashlar uchun mo'ljallangan bo'ladi.
+2. Shaxmat sehrli olam: bolalar va o'yin muyassar o'yinchilar uchun mos bo'lishi mumkin — mavhum, qiziqtiruvchi tasvir orqali shaxmat juda hayratli mashg'ulot ekanini ko'rsatadi
+3. The ideas behind chess openings (Ingliz tilida, premium): deb yoki ochilish nazariyalari haqida tahliliy ilmiy asar; premium tarzda batafsil ochilishlarni yoritadi.
+4. My system (Ingliz tilida): mashhur A. Nimzovich’ning klassik asari, strategik prinsiplarni tartibga solgan fundamental manba.
+5. Fide arbiters' manual (Ingliz tilida): FIDE arbitrlari uchun mo'ljallangan rasmiy qo'llanma, musobaqa yuritish va nazorat usullari bo'yicha yo'riqnoma.
+6. FIDE shaxmat qoidalari: shaxmat o'yinining rasmiy qoidalari, modernizatsiya qilingan FIDE talqinidagi to'liq me’yornoma.
+7. Kichkintoylarga shaxmat o'yini: bolalar uchun mo'ljallangan, oson tushunarli o'rgatish mazmunli darslik.
+8. Shaxmat saboqlari: shaxmat darslari, mashg'ulotlar ketma-ketligi, oddiydan murakkabgacha tushuntirish amaliyoti.
+9. Shaxmatning boshlang'ich asoslari: yangi boshlovchilar uchun asosiy konseptlar, o'yin tamoyillari, raislik/o'rinbosarlik va o'yin tuzilishi bo'yicha qo'llanma.
+10. Shaxmat: umumiy shaxmat mavzularini qamrab olgan nomenklatur manba bo'lishi mumkin; umumiy, asosiy shaxmat kitobi.
+11. Shaxmat o'rmoniga sayohat: o'rmon metaforik tarzda ishlatilgan darslik bo'lishi mumkin — o'rganish jarayonini sarguzashtli tarzda taqdim etadi.
+12. Особенности верховой езды по черно-белым клеткам
