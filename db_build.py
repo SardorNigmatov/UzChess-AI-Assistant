@@ -1,11 +1,9 @@
 from langchain_openai import OpenAIEmbeddings
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
-import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
 
 # Fayllar yo‘llari
 file_paths = [
@@ -25,16 +23,10 @@ for path in file_paths:
 # Embedding
 emb = OpenAIEmbeddings(model="text-embedding-3-small")
 
-# Chroma DB papkasi
-persist_directory = "./chroma_db"
-os.makedirs(persist_directory, exist_ok=True)
+# FAISS bazasini yaratish
+faiss_index = FAISS.from_documents(docs, emb)
 
-# Vektor bazasini yaratish
-vs = Chroma.from_documents(
-    documents=docs,
-    embedding=emb,
-    collection_name="my_collection",
-    persist_directory=persist_directory,
-)
+# Saqlash
+faiss_index.save_local("faiss_index")
 
-print("✅ Vektor baza yaratildi va saqlandi:", persist_directory)
+print("✅ FAISS baza yaratildi va saqlandi: faiss_index")

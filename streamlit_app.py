@@ -9,7 +9,7 @@ st.set_page_config(page_title="UzChess AI Assistant")
 # Logo va sarlavha
 col1, col2 = st.columns([1, 3])
 with col1:
-    st.image("uzchess-logo.png", width=100)  # 👉 logotip faylni shu papkaga qo‘ying
+    st.image("./images/uzchess.jpg", width=100)  # 👉 logotip faylni shu papkaga qo‘ying
 with col2:
     st.title("♟️ UzChess AI assistant")
 
