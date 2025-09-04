@@ -1,17 +1,20 @@
 import streamlit as st
 import requests
 
-# FastAPI URL (deploy qilganingizda manzilni yangilaysiz)
-API_URL = "http://127.0.0.1:8000/ask"
+# ======================
+# 1. Config
+# ======================
 
-st.set_page_config(page_title="UzChess AI Assistant")
+API_URL = "http://127.0.0.1:8000/ask"  # ⚠️ Deploy qilganda yangilang
+
+st.set_page_config(page_title="UzChess AI Assistant", page_icon="♟️")
 
 # Logo va sarlavha
 col1, col2 = st.columns([1, 3])
 with col1:
-    st.image("./images/uzchess.jpg", width=100)  # 👉 logotip faylni shu papkaga qo‘ying
+    st.image("./images/uzchess.jpg", width=100)  # ⚠️ Fayl shu papkada bo‘lishi kerak
 with col2:
-    st.title("♟️ UzChess AI assistant")
+    st.title("♟️ UzChess AI Assistant")
 
 # Vazifalar ro‘yxati
 st.markdown("### 🤖 Botning vazifalari")
@@ -20,46 +23,49 @@ st.write("""
 - 📖 Shaxmat kitoblarini tavsiya qilish  
 - 🤖 AI botlarni tanlashda yordam berish  
 - 🧩 Boshqotirmalar (puzzles) haqida tushuntirish  
-- 🎥 Video darslar va mashg'ulot rejalari bo'yicha maslahat berish  
+- 🎥 Video darslar va mashg'ulot rejalari bo‘yicha maslahat berish  
 - ♟️ Umumiy shaxmat qoidalari va strategiyalarini tushuntirish  
 """)
 
 # ======================
-# 2. Chat Interface
-# =====================
-st.divider()
-st.subheader("💬 AI Assistant bilan suhbat")
+# 2. Session
+# ======================
 
-# ======================
-# Session
-# ======================
 if "session_id" not in st.session_state:
     st.session_state["session_id"] = "session_1"
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = []
 
-# Oldingi xabarlarni chiqarish
+# ======================
+# 3. Oldingi xabarlarni chiqarish
+# ======================
+
+st.divider()
+st.subheader("💬 AI Assistant bilan suhbat")
+
 for msg in st.session_state["messages"]:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
 # ======================
-# Chat qismi
+# 4. Chat UI
 # ======================
-if prompt := st.chat_input("Savolingizni yozing..."):
-    # User xabari
-    st.session_state["messages"].append({"role": "user", "content": prompt})
+
+if user_input := st.chat_input("Savolingizni yozing..."):
+
+    # User xabarini chiqarish
+    st.session_state["messages"].append({"role": "user", "content": user_input})
     with st.chat_message("user"):
-        st.markdown(prompt)
+        st.markdown(user_input)
 
     # API chaqirish
-    payload = {"session_id": st.session_state["session_id"], "text": prompt}
+    payload = {"session_id": st.session_state["session_id"], "text": user_input}
     try:
-        res = requests.post(API_URL, json=payload, timeout=60)
-        res.raise_for_status()
-        answer = res.json()["answer"]
-    except Exception as e:
+        response = requests.post(API_URL, json=payload, timeout=60)
+        response.raise_for_status()
+        answer = response.json().get("answer", "⚠️ Javob olinmadi.")
+    except requests.exceptions.RequestException as e:
         answer = f"❌ API bilan bog‘lanishda xatolik: {e}"
 
     # Bot javobi

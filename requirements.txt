@@ -43,6 +43,7 @@ humanfriendly==10.0
 idna==3.10
 importlib_metadata==8.7.0
 importlib_resources==6.5.2
+iniconfig==2.1.0
 Jinja2==3.1.6
 jiter==0.10.0
 jsonpatch==1.33
@@ -82,6 +83,7 @@ overrides==7.7.0
 packaging==25.0
 pandas==2.3.2
 pillow==11.3.0
+pluggy==1.6.0
 posthog==5.4.0
 primp==0.15.0
 propcache==0.3.2
@@ -98,6 +100,7 @@ Pygments==2.19.2
 PyPika==0.48.9
 pyproject_hooks==1.2.0
 pyreadline3==3.5.4
+pytest==8.4.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.1
 pytz==2025.2
