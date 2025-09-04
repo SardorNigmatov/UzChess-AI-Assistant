@@ -35,40 +35,37 @@ U foydalanuvchilarga **kurslar, kitoblar, boshqotirmalar, AI botlar** haqida ma�
 
 ### 1. Repository klonlash
 
-git clone https://github.com/<username>/uzchess-ai-assistant.git
-cd uzchess-ai-assistant
+ - git clone https://github.com/<username>/uzchess-ai-assistant.git
+ - cd uzchess-ai-assistant
 
 ### 2. Virtual environment yaratish
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+ - python -m venv venv
+ - source venv/bin/activate   # Linux/Mac
+ - venv\Scripts\activate      # Windows
 
 ### 3. Kerakli kutubxonalarni o‘rnatish
-pip install -r requirements.txt
+ - pip install -r requirements.txt
 
 ### 4. .env fayl yaratish
-OPENAI_API_KEY=your_openai_api_key
-REDIS_URL=redis://localhost:6379/0   # Agar Redis ishlatsangiz
+ - OPENAI_API_KEY=your_openai_api_key
+ - REDIS_URL=redis://localhost:6379/0   # Agar Redis ishlatsangiz
 
 ## 🔨 FAISS bazasini yaratish
-
-Matn fayllarini data/ papkasiga joylashtiring (masalan: courses.txt, books.txt va h.k.).
-Keyin FAISS index yarating:
-python db_build.py
+ - Matn fayllarini data/ papkasiga joylashtiring (masalan: courses.txt, books.txt va h.k.).
+ - Keyin FAISS index yarating:
+ - python db_build.py
 
 ## ▶️ Ishga tushirish
-Backend (FastAPI)
-uvicorn main:app --reload
-
-Swagger hujjatlari: http://127.0.0.1:8000/docs
-
-Frontend (Streamlit)
-streamlit run frontend.py
+ - Backend (FastAPI)
+ - uvicorn main:app --reload
+ - Swagger hujjatlari: http://127.0.0.1:8000/docs
+ - Frontend (Streamlit)
+ - streamlit run frontend.py
 
 ## 🧪 Testlar
-pytest -v
+ - pytest -v
 
 
 ## 👨‍💻 Muallif
-Ism: Nigmatov Sardor
-Email: sardornigmatov2003@gmail.com
+ - Ism: Nigmatov Sardor
+ - Email: sardornigmatov2003@gmail.com
