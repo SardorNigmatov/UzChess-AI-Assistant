@@ -35,7 +35,7 @@ U foydalanuvchilarga **kurslar, kitoblar, boshqotirmalar, AI botlar** haqida maâ
 
 ### 1. Repository klonlash
 
- - git clone (https://github.com/SardorNigmatov/UzChess-AI-Assistant/)
+ - git clone https://github.com/SardorNigmatov/UzChess-AI-Assistant/
  - cd uzchess-ai-assistant
 
 ### 2. Virtual environment yaratish
