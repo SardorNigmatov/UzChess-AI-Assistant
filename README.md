@@ -69,3 +69,4 @@ U foydalanuvchilarga **kurslar, kitoblar, boshqotirmalar, AI botlar** haqida ma�
 ## 👨‍💻 Muallif
  - Ism: Nigmatov Sardor
  - Email: sardornigmatov2003@gmail.com
+ - Link: https://uzchess-ai-assistant-acd5avpdhdaq2rto7jurjq.streamlit.app/
