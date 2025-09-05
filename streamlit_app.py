@@ -17,7 +17,7 @@ with col2:
     st.title("♟️ UzChess AI Assistant")
 
 # Vazifalar ro‘yxati
-st.markdown("### 🤖 Botning vazifalari")
+st.markdown("### 🤖 AI assistant vazifalari")
 st.write("""
 - 📚 UzChess ilovasidagi kurslar haqida ma'lumot berish  
 - 📖 Shaxmat kitoblarini tavsiya qilish  
